@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Academy.E2EProject.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="Academy.E2EProject.Validations">
+        <methods>
+          <include name="closedriver"/>
+          <include name="validatetitle"/>
+          <include name="prereq"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.Validations -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
