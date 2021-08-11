@@ -52,7 +52,7 @@ public class Validations extends Base {
 		    login=new LogInPage(driver);
 		   String title=login.validateTitle();
 		   SoftAssert softAssertion= new SoftAssert();
-		   softAssertion.assertEquals("FEATURED COURSES12", title);
+		   softAssertion.assertEquals("FEATURED COURSES", title);
 		   //if in soft assertion we don't write this assertall then it shows pass only even if its failing
 		   //so its imp to write assertAll if we are using soft assertion
 		   softAssertion.assertAll();
