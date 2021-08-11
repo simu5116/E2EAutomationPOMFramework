@@ -32,10 +32,10 @@ public class Base {
 		 * so business people can directly select and run in the desired browser
 		 */
 		//mvn test -Dbrowserr=chrome
-		//String Browsername=System.getproperty("browser");
+		String Browser=System.getProperty("browser");
 		//in jenkins after creating choice parameter
-		//configure mvn -Dbrowser="$browser"
-		String Browser=prop.getProperty("browser");
+		//configure mvn test -Dbrowser="$browser"
+		//String Browser=prop.getProperty("browser");
 		
 		if(Browser.contains("chrome"))
 		{
